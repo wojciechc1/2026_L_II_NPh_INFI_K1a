@@ -12,9 +12,9 @@ def get_formatted(msg, imie, format):
     if format == PLAIN:
         result = plain_text(msg, imie)
     elif format == PLAIN_UP:
-        result = plain_text_upper_case(msg, imie)
-    elif format == PLAIN_LO:
         result = plain_text_lower_case(msg, imie)
+    elif format == PLAIN_LO:
+        result = plain_text_upper_case(msg, imie)
     elif format == JSON:
         result = format_to_json(msg, imie)
     return result
